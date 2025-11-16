@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/matrix_transform.h>
+
 /*
  * Totem dongle shield – fake 1x1 matrix just so ZMK's matrix code is happy.
  */
