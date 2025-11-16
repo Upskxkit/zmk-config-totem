@@ -10,9 +10,14 @@
     keymap {
         compatible = "zmk,keymap";
         layout {
-            bindings = <
-                &kp C_NUMLOCK
-            >;
+            bindings = <&trans>; 
+        };
+        
+        // Define the behavior node inline if includes fail
+        trans: behavior_transparent {
+            compatible = "zmk,behavior-transparent";
+            label = "TRANSPARENT_BEHAVIOR";
+            #binding-cells = <0>;
         };
     };
 };
