@@ -5,15 +5,16 @@
  */
 
 /*
- * Dongle shield for Totem – no key matrix, just a receiver.
+ * Totem dongle shield – no key matrix, just a receiver.
  */
 
  / {
-     chosen {
-         zmk,kscan = &kscan0;
-     };
- };
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-none";
+        label = "KSCAN_DONGLE";
+    };
 
- &kscan0 {
-     compatible = "zmk,kscan-none";
- };
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+};
