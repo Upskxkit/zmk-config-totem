@@ -1,0 +1,13 @@
+/* Minimal 1x1 keymap for the Totem dongle */
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+        layout {
+            bindings = <
+                &trans
+            >;
+        };
+    };
+};
