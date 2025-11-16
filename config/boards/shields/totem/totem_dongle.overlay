@@ -12,6 +12,10 @@
     kscan0: kscan0 {
         compatible = "zmk,kscan-none";
         label = "KSCAN_DONGLE";
+
+        // Dummy matrix so ZMK’s macros compile
+        rows = <0>;
+        columns = <0>;
     };
 
     chosen {
