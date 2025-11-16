@@ -5,17 +5,21 @@
  */
 
 /*
- * Totem dongle shield – no key matrix, just a receiver.
+ * Totem dongle shield – fake 1x1 matrix just so ZMK's matrix code is happy.
  */
 
  / {
     kscan0: kscan0 {
-        compatible = "zmk,kscan-none";
+        compatible = "zmk,kscan-gpio";
         label = "KSCAN_DONGLE";
 
-        // Dummy matrix so ZMK’s macros compile
-        rows = <0>;
-        columns = <0>;
+        rows = <1>;
+        columns = <1>;
+
+        // Use any valid GPIO controller on the nRF52840.
+        // gpio0 is standard on Nordic SoCs.
+        row-gpios = <&gpio0 0 GPIO_ACTIVE_HIGH>;
+        col-gpios = <&gpio0 1 GPIO_ACTIVE_HIGH>;
     };
 
     chosen {
