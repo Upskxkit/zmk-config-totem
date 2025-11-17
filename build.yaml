@@ -11,7 +11,7 @@ include:
     # cmake-args: -DCONFIG_ZMK_STUDIO=y
     cmake-args: >
       -DZMK_KEYMAP_FILE="config/totem_dongle.keymap"
-      -DCONFIG_ZMK_PHYSICAL_LAYOUT=n
+      -DZMK_PHYSICAL_LAYOUT=n
 
   - board: seeeduino_xiao_ble
     shield: settings_reset
