@@ -3,7 +3,6 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        // No zmk,physical-layout needed for the dongle
     };
 
     mock_kscan: mock_kscan_0 {
