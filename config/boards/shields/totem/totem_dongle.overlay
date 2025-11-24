@@ -1,7 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 /delete-node/ &kscan0;
-/delete-node/ &default_transform;
 
 / {
 
