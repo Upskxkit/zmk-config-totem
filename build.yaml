@@ -21,8 +21,9 @@
 include:
   - board: seeeduino_xiao_ble
     shield: totem_left
-    snippet: studio-rpc-usb-uart
+    # snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: totem_right
+# Reset 
   - board: seeeduino_xiao_ble
     shield: settings_reset
