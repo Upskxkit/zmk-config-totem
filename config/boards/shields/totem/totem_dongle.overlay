@@ -1,17 +1,14 @@
-#include "totem.dtsi"
-
-/delete-node/ &kscan0;
+#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-
-    chosen {
-        zmk,kscan = &mock_kscan;
-    };
-
-    mock_kscan: mock_kscan_0 {
+    kscan0: kscan_0 {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
         events = <0>;
+    };
+
+    chosen {
+        zmk,kscan = &kscan0;
     };
 };
